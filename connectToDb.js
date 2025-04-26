@@ -1,10 +1,7 @@
 import mysql from "mysql2/promise";
 
-let connection = await mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "todolist",
-});
+
+let connection = await mysql.createConnection("mysql://root:PmPqytlFIpkPMYeQJnKfNDtcOWkoBMyW@shuttle.proxy.rlwy.net:59753/railway")
 
 try {
   await connection.connect();
